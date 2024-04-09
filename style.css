@@ -143,18 +143,18 @@ img {
 }
 
 .about-container {
+  display: flex;
+  flex-direction: column;
   padding: 0px 40px;
   gap: 40px;
 }
 
 .about-section-head {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
+  text-align: center;
   font-size: 32px;
   font-family: var(--font-family-anton);
   padding: 0px 40px;
+  margin: 0;
 }
 
 .about-accent-red {
@@ -212,4 +212,113 @@ img {
   .about-image-wrapper {
     display: none;
   }
+}
+
+/* courses */
+.courses {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background-navy);
+  color: var(--color-white);
+  padding: 80px 0px;
+
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  gap: 40px;
+}
+
+.courses-section-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 32px;
+  font-family: var(--font-family-anton);
+  margin: 0;
+}
+
+.courses-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.courses-cards-container {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  background-color: var(--color-accent-yellow);
+  box-shadow: 4px 4px  var(--color-accent-red);
+  text-decoration: none;
+}
+
+.card-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  background-image: url("./img/live.png");
+  background-size: cover;
+}
+
+/* .card-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-course-overlay);
+} */
+
+.card-image {
+  color: var(--color-white);
+  font-size: 32px;
+  font-family: var(--font-family-anton);
+  background-size: cover;
+}
+
+.card-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  padding: 20px;
+}
+
+.card-body {
+  font-family: var(--font-family-noto-sans-jp);
+  color: var(--color-black);
+  margin: 0;
+}
+
+.card-more {
+  align-self: flex-end;
+  font-family: var(--font-family-noto-sans-jp);
+  color: var(--color-accent-red);
+  text-decoration: none;
+}
+
+.courses-big-button {
+  text-decoration: none;
+  color: var(--color-white);
+  width: 800px;
+  height: 60px;
+  background-color: var(--color-accent-red);
+  box-shadow: 4px 4px  var(--color-accent-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-button-label {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 670px;
+  font-family: var(--font-family-noto-sans-jp);
+  font-size: 20px;
 }
