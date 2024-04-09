@@ -256,6 +256,12 @@ img {
   text-decoration: none;
 }
 
+.courses-cards-container:hover {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: var(--color-course-hover-yellow);
+  box-shadow: 12px 12px var(--color-button-hover-red);
+}
+
 .card-image-wrapper {
   display: flex;
   justify-content: center;
@@ -312,6 +318,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.courses-big-button:hover {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: var(--color-button-hover-red);
+  box-shadow: 12px 12px var(--color-accent-yellow);
 }
 
 .big-button-label {
