@@ -225,6 +225,7 @@ img {
 .courses-container {
   display: flex;
   flex-direction: column;
+  max-width: 880px;
   padding: 0px 40px;
   gap: 40px;
 }
@@ -263,6 +264,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 250px;
   background-image: url("./img/live.png");
   background-size: cover;
@@ -290,7 +292,7 @@ img {
 .card-body-wrapper {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  max-width: 550px;
   padding: 20px;
   font-family: var(--font-family-noto-sans-jp);
 }
@@ -310,7 +312,7 @@ img {
 .courses-big-button {
   text-decoration: none;
   color: var(--color-white);
-  width: 800px;
+  max-width: 800px;
   height: 60px;
   background-color: var(--color-accent-red);
   box-shadow: 4px 4px  var(--color-accent-yellow);
