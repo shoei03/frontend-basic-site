@@ -249,7 +249,6 @@ img {
 .courses-cards-container {
   display: flex;
   flex-direction: row;
-  height: 150px;
   background-color: var(--color-accent-yellow);
   box-shadow: 4px 4px  var(--color-accent-red);
   text-decoration: none;
@@ -294,17 +293,17 @@ img {
   flex-direction: column;
   width: 550px;
   padding: 20px;
+  font-family: var(--font-family-noto-sans-jp);
 }
 
 .card-body {
-  font-family: var(--font-family-noto-sans-jp);
+  flex-grow: 1;
   color: var(--color-black);
   margin: 0;
 }
 
 .card-more {
   align-self: flex-end;
-  font-family: var(--font-family-noto-sans-jp);
   color: var(--color-accent-red);
   text-decoration: none;
 }
