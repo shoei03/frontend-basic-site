@@ -172,8 +172,9 @@ img {
 }
 
 .about-section-body {
-  margin: 16px 0px;
+  margin: 0;
   flex: 1;
+  align-self: center;
   color: var(--color-white);
   font-family: var(--font-family-noto-sans-jp);
 }
