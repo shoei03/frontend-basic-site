@@ -253,10 +253,10 @@ img {
   background-color: var(--color-accent-yellow);
   box-shadow: 4px 4px  var(--color-accent-red);
   text-decoration: none;
+  transition-duration: 0.3s;
 }
 
 .courses-cards-container:hover {
-  transition: background-color 0.3s, box-shadow 0.3s;
   background-color: var(--color-course-hover-yellow);
   box-shadow: 12px 12px var(--color-button-hover-red);
 }
