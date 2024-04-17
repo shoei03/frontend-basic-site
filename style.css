@@ -220,7 +220,6 @@ img {
   background-color: var(--color-background-navy);
   color: var(--color-white);
   padding: 80px 0px;
-
 }
 
 .courses-container {
@@ -251,7 +250,7 @@ img {
   display: flex;
   flex-direction: row;
   background-color: var(--color-accent-yellow);
-  box-shadow: 4px 4px  var(--color-accent-red);
+  box-shadow: 4px 4px var(--color-accent-red);
   text-decoration: none;
   transition-duration: 0.3s;
 }
@@ -316,7 +315,7 @@ img {
   max-width: 800px;
   height: 60px;
   background-color: var(--color-accent-red);
-  box-shadow: 4px 4px  var(--color-accent-yellow);
+  box-shadow: 4px 4px var(--color-accent-yellow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,7 +358,7 @@ img {
     font-size: 24px;
     width: 100%;
     height: 220px;
-  } 
+  }
 
   .card-image {
     font-size: 24px;
@@ -384,4 +383,114 @@ img {
     height: 30px;
     width: 30px;
   }
+}
+
+/* form */
+.application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: var(--color-accent-yellow);
+}
+
+.application-container {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+.application-head {
+  font-family: var(--font-family-anton);
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.application-body {
+  font-size: 16px;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.application-form {
+  display: grid;
+  width: 100%;
+  row-gap: 40px;
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.form-label {
+  color: var(--color-black);
+  font-size: 20px;
+}
+
+.form-input,
+.form-textarea {
+  background-color: var(--color-form-background-yellow);
+  color: var(--color-black);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-form-border-red);
+  border-radius: 8px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-form-placeholder-gray);
+}
+
+.big-button:hover,
+.big-button:focus {
+  background: var(--color-button-hover-red);
+}
+
+.big-button-label {
+  flex-grow: 1;
+  font-size: 20px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.big-button-icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.big-button-icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+.application-big-button {
+  display: flex;
+  align-items: center;
+  background: var(--color-accent-red);
+  height: 60px;
+  max-width: 880px;
+  gap: 10px;
+  padding: 0 40px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  align-self: stretch;
+  transition: 0.3s;
+  box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.application-big-button:hover,
+.application-big-button:focus {
+  box-shadow: 12px 12px 2px var(--color-black);
 }
