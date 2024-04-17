@@ -494,3 +494,18 @@ img {
 .application-big-button:focus {
   box-shadow: 12px 12px 2px var(--color-black);
 }
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background-black);
+  color: var(--color-white);
+  font-family: var(--font-family-noto-sans-jp);
+  padding: 60px 0;
+}
+
+.footer-copy-right {
+  font-size: 16px;
+  margin: 0;
+}
