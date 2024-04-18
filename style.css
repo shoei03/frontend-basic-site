@@ -309,21 +309,27 @@ img {
   text-decoration: none;
 }
 
-.courses-big-button {
+.big-button {
   text-decoration: none;
   color: var(--color-white);
   max-width: 800px;
   height: 60px;
   background-color: var(--color-accent-red);
-  box-shadow: 4px 4px var(--color-accent-yellow);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+}
+
+.courses-big-button {
+  box-shadow: 4px 4px var(--color-accent-yellow);
+}
+
+.big-button:hover {
+  background-color: var(--color-button-hover-red);
 }
 
 .courses-big-button:hover {
-  transition: background-color 0.3s, box-shadow 0.3s;
-  background-color: var(--color-button-hover-red);
   box-shadow: 12px 12px var(--color-accent-yellow);
 }
 
@@ -450,49 +456,12 @@ img {
   color: var(--color-form-placeholder-gray);
 }
 
-.big-button:hover,
-.big-button:focus {
-  background: var(--color-button-hover-red);
-}
-
-.big-button-label {
-  flex-grow: 1;
-  font-size: 20px;
-  color: var(--color-white);
-  text-align: center;
-}
-
-.big-button-icon {
-  flex: 0 0 auto;
-  width: 40px;
-  height: 40px;
-}
-
-.big-button-icon-img {
-  width: 100%;
-  height: 100%;
-}
-
 .application-big-button {
-  display: flex;
-  align-items: center;
-  background: var(--color-accent-red);
-  height: 60px;
-  max-width: 880px;
-  gap: 10px;
-  padding: 0 40px;
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  align-self: stretch;
-  transition: 0.3s;
-  box-shadow: 4px 4px 0 var(--color-black);
+  box-shadow: 4px 4px var(--color-background-black);
 }
 
-.application-big-button:hover,
-.application-big-button:focus {
-  box-shadow: 12px 12px 2px var(--color-black);
+.application-big-button:hover {
+  box-shadow: 12px 12px var(--color-background-black);
 }
 
 @media (max-width: 750px) {
