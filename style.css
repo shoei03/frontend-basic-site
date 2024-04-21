@@ -478,12 +478,8 @@ img {
     padding: 0 20px;
   }
 
-  .application-section-head {
+  .application-head {
     font-size: 24px;
-  }
-
-  .application-section-body {
-    font-size: 12px;
   }
 
   .form-item {
