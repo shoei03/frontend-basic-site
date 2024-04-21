@@ -421,6 +421,7 @@ img {
   font-size: 16px;
   margin: 0;
   color: var(--color-black);
+  font-family: var(--font-family-noto-sans-jp);
 }
 
 .application-form {
@@ -439,6 +440,7 @@ img {
 .form-label {
   color: var(--color-black);
   font-size: 20px;
+  font-family: var(--font-family-noto-sans-jp);
 }
 
 .form-input,
@@ -454,6 +456,7 @@ img {
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: var(--color-form-placeholder-gray);
+  font-family: var(--font-family-noto-sans-jp);
 }
 
 .application-big-button {
