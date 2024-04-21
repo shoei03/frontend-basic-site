@@ -316,8 +316,9 @@ img {
   height: 60px;
   background-color: var(--color-accent-red);
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding: 0px 40px;
   transition: 0.3s;
 }
 
@@ -335,7 +336,7 @@ img {
 
 .big-button-label {
   text-align: center;
-  width: 670px;
+  flex-grow: 1;
   font-family: var(--font-family-noto-sans-jp);
   font-size: 20px;
 }
@@ -510,6 +511,7 @@ img {
   }
 
   .big-button-icon {
+    flex: 0 0 auto;
     width: 30px;
     height: 30px;
   }
