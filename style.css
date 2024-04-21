@@ -220,7 +220,6 @@ img {
   background-color: var(--color-background-navy);
   color: var(--color-white);
   padding: 80px 0px;
-
 }
 
 .courses-container {
@@ -251,7 +250,7 @@ img {
   display: flex;
   flex-direction: row;
   background-color: var(--color-accent-yellow);
-  box-shadow: 4px 4px  var(--color-accent-red);
+  box-shadow: 4px 4px var(--color-accent-red);
   text-decoration: none;
   transition-duration: 0.3s;
 }
@@ -310,27 +309,34 @@ img {
   text-decoration: none;
 }
 
-.courses-big-button {
+.big-button {
   text-decoration: none;
   color: var(--color-white);
   max-width: 800px;
   height: 60px;
   background-color: var(--color-accent-red);
-  box-shadow: 4px 4px  var(--color-accent-yellow);
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding: 0px 40px;
+  transition: 0.3s;
+}
+
+.courses-big-button {
+  box-shadow: 4px 4px var(--color-accent-yellow);
+}
+
+.big-button:hover {
+  background-color: var(--color-button-hover-red);
 }
 
 .courses-big-button:hover {
-  transition: background-color 0.3s, box-shadow 0.3s;
-  background-color: var(--color-button-hover-red);
   box-shadow: 12px 12px var(--color-accent-yellow);
 }
 
 .big-button-label {
   text-align: center;
-  width: 670px;
+  flex-grow: 1;
   font-family: var(--font-family-noto-sans-jp);
   font-size: 20px;
 }
@@ -359,7 +365,7 @@ img {
     font-size: 24px;
     width: 100%;
     height: 220px;
-  } 
+  }
 
   .card-image {
     font-size: 24px;
@@ -383,5 +389,152 @@ img {
   .arrow-icon {
     height: 30px;
     width: 30px;
+  }
+}
+
+/* form */
+.application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: var(--color-accent-yellow);
+}
+
+.application-container {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+.application-head {
+  font-family: var(--font-family-anton);
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.application-body {
+  font-size: 16px;
+  margin: 0;
+  color: var(--color-black);
+  font-family: var(--font-family-noto-sans-jp);
+}
+
+.application-form {
+  display: grid;
+  width: 100%;
+  row-gap: 40px;
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.form-label {
+  color: var(--color-black);
+  font-size: 20px;
+  font-family: var(--font-family-noto-sans-jp);
+}
+
+.form-input,
+.form-textarea {
+  background-color: var(--color-form-background-yellow);
+  color: var(--color-black);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-form-border-red);
+  border-radius: 8px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-form-placeholder-gray);
+  font-family: var(--font-family-noto-sans-jp);
+}
+
+.application-big-button {
+  box-shadow: 4px 4px var(--color-background-black);
+  border: none;
+}
+
+.application-big-button:hover {
+  box-shadow: 12px 12px var(--color-background-black);
+}
+
+@media (max-width: 750px) {
+  .application {
+    padding: 40px 0;
+  }
+
+  .application-container {
+    padding: 0 20px;
+  }
+
+  .application-head {
+    font-size: 24px;
+  }
+
+  .form-item {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+
+  .form-label {
+    font-size: 16px;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .application-big-button {
+    height: 40px;
+    padding: 0 20px;
+  }
+
+  .big-button-label {
+    font-size: 14px;
+  }
+
+  .big-button-icon {
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background-black);
+  color: var(--color-white);
+  font-family: var(--font-family-noto-sans-jp);
+  padding: 60px 0;
+}
+
+.footer-copy-right {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-copy-right {
+    font-size: 12px;
   }
 }
