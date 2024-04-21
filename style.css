@@ -461,6 +461,7 @@ img {
 
 .application-big-button {
   box-shadow: 4px 4px var(--color-background-black);
+  border: none;
 }
 
 .application-big-button:hover {
