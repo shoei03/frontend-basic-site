@@ -484,7 +484,7 @@ img {
 
   .form-item {
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    row-gap: 5px;
   }
 
   .form-label {
@@ -494,6 +494,7 @@ img {
   .form-input,
   .form-textarea {
     padding: 8px;
+    margin-bottom: 5px;
     font-size: 12px;
   }
 
